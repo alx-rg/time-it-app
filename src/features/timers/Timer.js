@@ -3,6 +3,5 @@ export default function createTimer(name) {
     name,
     time : 0,
     isRunning: false,
-    todo: null,
   }
 }
