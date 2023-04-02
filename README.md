@@ -1,3 +1,7 @@
+# Live app with GitHub Pages
+
+Check it out.. [The App is ALIVE!!](https://alx-rg.github.io/time-it-app/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
