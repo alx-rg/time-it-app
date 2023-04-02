@@ -6,7 +6,6 @@ import ListTimers from './components/ListTimers';
 function App() {
   return (
     <div className="App">
-        <h1>Timers 4D thyme</h1>
         <NewTimer />
         <ListTimers />
         {/* <img src={logo} className="App-logo" alt="logo" /> */}

@@ -1,49 +1,107 @@
-.TimerView {
-	width: 320px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: baseline;
+.card-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
 }
 
-.TimerView > h1 {
-	flex:1;
-	margin: 1rem;
-	text-align: left;
-	font-variant-numeric: tabular-nums;
+.card-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
-.TimerView > h2 {
-	flex: 1;
+.card-header .img-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #333;
 }
 
-.TimerView > button {
-	padding: 0.25rem 0.5rem;
-	border-radius: 0.5rem;
-	border: 1px solid #000;
-	color: #fff;
-	font-size: 1rem;
-	font-weight: bold;
-	width: 4rem;
+.card-header .text-chat {
+  color: black;
+  margin: 0;
+  font-size: 20px;
 }
 
-.start-button {
-  background-color: rgb(0, 105, 0);
-  color: white;
+.card-body {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.messages-container {
+  padding: 15px;
+}
+
+.message-box {
   padding: 10px;
-  border-radius: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
 }
 
-.stop-button {
-  background-color: red;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
+.message-box.left {
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 13px;
+  left: 0;
 }
 
-.reset-button {
-	background-color: rgb(105, 0, 96);
-	color: rgb(60, 60, 60);
-	padding: 10px;
-	border-radius: 5px;
+.message-box.right {
+  background-color: #333;
+  color: #fff;
+  font-size: 13px;
+  right: 0;
+}
+
+.message-input {
+  padding: 5px;
+  border-top: 1px solid #ccc;
+}
+
+.message-input .button-reset {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.message-input .button-reset:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.message-input .start-button {
+  background-color: #00610f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.message-input .button-reset:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.message-input .stop-button {
+  background-color: #700000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 13px;
 }
