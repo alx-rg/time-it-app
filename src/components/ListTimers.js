@@ -7,17 +7,12 @@ export default function ListTimers() {
   console.log(timers)
   return (
     <div>
-      {timers.map((timer, index) => {
-        return (
-          <div key={index}>
-            <TimerView
-              name={timer.name}
-              time={timer.time}
-              isRunning={timer.isRunning}
-            />
-          </div>
-        )
-      })}
+      {timers.map((timer, index) =>
+      <TimerView
+        {...timer}
+        index={index}
+        key={`keyTimer-${index}`}
+      />)}
     </div>
   )
 }
