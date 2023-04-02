@@ -6,7 +6,7 @@ import { addTimer } from '../features/timers/timersSlice'
 export default function NewTimer() {
 	const [ name, setName ] = useState('')
 	const dispatch = useDispatch()
-
+  console.log(name)
 	return (
 		<div>
       <input
@@ -21,4 +21,5 @@ export default function NewTimer() {
 
 		</div>
 	)
+
 }

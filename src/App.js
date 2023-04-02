@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import NewTimer from './components/NewTimer';
+import ListTimers from './components/ListTimers';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           Enter your timer's <code>name</code> and click save to start it.
         </p>
         <NewTimer />
+        <ListTimers />
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
         {/* <a
