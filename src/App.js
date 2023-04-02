@@ -6,11 +6,7 @@ import ListTimers from './components/ListTimers';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Timer List</h1>
-        <p>
-          Enter your timer's <code>name</code> and click save to start it.
-        </p>
+        <h1>Timers 4D thyme</h1>
         <NewTimer />
         <ListTimers />
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
@@ -23,7 +19,6 @@ function App() {
         >
           Learn React
         </a> */}
-      </header>
     </div>
   );
 }
