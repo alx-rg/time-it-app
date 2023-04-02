@@ -8,40 +8,33 @@ export default function TimerView({name, time, isRunning, index, description}) {
   const dispatch = useDispatch()
 
   return (
-
-
-
     <div className='card'>
-
-
-
-        <div class="card-container">
-  <div class="card-header">
-    <div class="img-avatar"></div>
-    <div class="text-chat">{formatTime(time)}</div>
-  </div>
-  <div class="card-body">
-    <div class="messages-container">
-        <div class="message-box left">
-            <p>{name}</p>
+      <div className="card-container">
+        <div className="card-header">
+          <div className={isRunning? "img-avatar" : "img-stop"}></div>
+          <div className="text-chat">{formatTime(time)}</div>
         </div>
-        <div class="message-box right">
-            <p>{description}</p>
+        <div className="card-body">
+          <div className="messages-container">
+              <div className="message-box left">
+                  <p>{name}</p>
+              </div>
+              <div className="message-box right">
+                  <p>{description}</p>
+              </div>
+          </div>
+          <div className="message-input">
+            <button className={isRunning? "stop-button": "start-button"}
+                        onClick={() => dispatch(toggleTimer(index))}>
+                  {isRunning? "Stop": "Start"}
+            </button>
+            <button className="button-reset"
+              onClick={() => dispatch(resetTimer(index))}
+              >Reset
+            </button>
+          </div>
         </div>
-    </div>
-    <div class="message-input">
-    <button className={isRunning? "stop-button": "start-button"}
-                onClick={() => dispatch(toggleTimer(index))}>
-          {isRunning? "Stop": "Start"}
-        </button>
-        <button className="button-reset"
-        onClick={() => dispatch(resetTimer(index))}
-        >
-        Reset
-        </button>    </div>
-  </div>
-</div>
-
+      </div>
     </div>
   )
 }
