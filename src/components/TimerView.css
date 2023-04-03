@@ -111,6 +111,22 @@
   color: #333;
 }
 
+.message-input .button-delete {
+  background-color: #b30000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.message-input .button-delete:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
 .message-input .start-button {
   background-color: #00610f;
   color: #fff;

@@ -14,6 +14,9 @@ export const timersSlice = createSlice({
       const { name, description } = action.payload
       state.value.push(new Timer(name, description))
     },
+    deleteTimer: (state, action) => {
+      state.value.splice(action.payload, 1)
+    },
     toggleTimer: (state, action) => {
       state.value[action.payload].isRunning =
       !state.value[action.payload].isRunning
@@ -30,6 +33,6 @@ export const timersSlice = createSlice({
   }
 })
 
-export const { addTimer, toggleTimer, update, resetTimer } = timersSlice.actions;
+export const { addTimer, toggleTimer, update, resetTimer, deleteTimer } = timersSlice.actions;
 
 export default timersSlice.reducer;
